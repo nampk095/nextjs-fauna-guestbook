@@ -127,10 +127,10 @@ const EntryForm = ({ onSubmit: onSubmitProp }) => {
         </button>
       </form>
       {{
-        failed: () => <ErrorMessage>Something went wrong. :(</ErrorMessage>,
+        failed: () => <ErrorMessage>Đã xảy ra sự cố. :(</ErrorMessage>,
 
         submitted: () => (
-          <SuccessMessage>Thanks for signing the guestbook.</SuccessMessage>
+          <SuccessMessage>Cảm ơn vì đã ký vào guestbook.</SuccessMessage>
         ),
       }[formState]?.()}
     </>
@@ -161,7 +161,7 @@ const Guestbook = ({ initialEntries }) => {
           Sign the Guestbook
         </h5>
         <p className="my-1 text-gray-800 dark:text-gray-200">
-          Share a message for a future visitor.
+          Chia sẻ tin nhắn cho khách truy cập trong tương lai.
         </p>
         <EntryForm onSubmit={onSubmit} />
       </div>
