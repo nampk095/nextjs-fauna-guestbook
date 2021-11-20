@@ -107,7 +107,7 @@ const EntryForm = ({ onSubmit: onSubmitProp }) => {
         />
         <input
           required
-          className={cn(inputClasses, 'pl-4 pr-32 flex-grow')}
+          className={cn(inputClasses, 'pl-4 pr-32 pt-10 flex-grow')}
           aria-label="Your message"
           placeholder="Your message..."
           value={values.message}
