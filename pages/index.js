@@ -45,7 +45,7 @@ const AppHead = () => (
 )
 
 const EntryItem = ({ entry }) => (
-  <div className="flex flex-col space-y-2">
+  <div className="flexxx flex-col space-y-2">
     <div className="prose dark:prose-dark w-full">{entry.message}</div>
     <div className="flex items-center space-x-3">
       <p className="text-sm text-gray-500">{entry.name}</p>
@@ -96,7 +96,7 @@ const EntryForm = ({ onSubmit: onSubmitProp }) => {
 
   return (
     <>
-      <form className="flex relative my-4" onSubmit={onSubmit}>
+      <form className="flexxx relative my-4" onSubmit={onSubmit}>
         <input
           required
           className={cn(inputClasses, 'w-1/3 mr-2 px-4')}
