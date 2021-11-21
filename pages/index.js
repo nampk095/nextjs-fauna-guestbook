@@ -161,7 +161,9 @@ const Guestbook = ({ initialEntries }) => {
           Sign the Guestbook
         </h5>
         <p className="my-1 text-gray-800 dark:text-gray-200">
-          Chia sẻ tin nhắn cho khách truy cập trong tương lai.
+          Chia sẻ tin nhắn cho khách truy cập trong tương lai.<br/>
+          PS: Hãy để lại dấu chấm nếu muốn ẩn danh 👽
+          
         </p>
         <EntryForm onSubmit={onSubmit} />
       </div>
